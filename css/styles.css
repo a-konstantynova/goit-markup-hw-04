@@ -13,6 +13,8 @@
   --bg-team-color: #f5f5f5;
   --header-line-color: #ececec;
   --border-portfolio: #eeeeee;
+  --bg-hero: #c4c4c4;
+  --social-svg: #afb1b8;
 }
 
 body {
@@ -153,6 +155,9 @@ img {
 }
 
 .link-contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -162,26 +167,28 @@ img {
   padding-bottom: 32px;
 }
 
-.link-contacts:hover,
-.link-contacts:focus {
-  color: var(--secondary-color);
-}
-
-.mail-link {
-  margin-right: 50px;
-}
-
-.mail-svg {
+.header-svg {
   display: flex;
   justify-content: center;
   margin-right: 10px;
   fill: var(--light-grey-color);
 }
 
-/* .mail-svg:hover,
-.mail-svg:focus {
-  fill: #2196f3;
-} */
+.link-contacts:hover .header-svg,
+.link-contacts:focus .header-svg {
+  fill: var(--secondary-color);
+}
+
+.link-contacts:hover,
+.link-contacts:focus {
+  color: var(--secondary-color);
+}
+
+.header-link-item {
+  display: flex;
+  margin-right: 50px;
+}
+
 /*==========HEADER==========*/
 
 /* =========HERO========== */
@@ -192,12 +199,13 @@ img {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 176px;
-  background-color: #c4c4c4;
+  background-color: var(--bg-hero);
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url("../img/bg-image.jpg");
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 1600px;
@@ -309,7 +317,7 @@ img {
 
 /* =========END TEAM========== */
 .team {
-  background-color: #f5f4fa;
+  background-color: var(--light-light-grey-color);
 }
 
 .team-list {
@@ -376,7 +384,7 @@ img {
 }
 
 .social-svg {
-  fill: #afb1b8;
+  fill: var(--social-svg);
 }
 
 .social-links:hover,
@@ -421,11 +429,11 @@ img {
   justify-content: center;
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--social-svg);
 }
 
 .clients-svg {
-  fill: #afb1b8;
+  fill: var(--social-svg);
 }
 
 .clients-list-link:hover .clients-svg,
@@ -483,8 +491,64 @@ img {
 .mail {
   margin-bottom: 9px;
 }
-/* =========END FOOTER========== */
 
+.footer-social {
+  display: flex;
+}
+
+.footer-social-title {
+  font-weight: 700;
+  line-height: 1.14px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--white-color);
+  margin-bottom: 20px;
+}
+
+.footer-list-icon {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-list-item-icon {
+  margin-right: 70px;
+}
+
+.footer-social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-social-links {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-social-svg {
+  fill: var(--white-color);
+}
+
+.footer-social-links:hover,
+.footer-social-links:focus {
+  background-color: var(--secondary-color);
+}
+
+.footer-social-list-item:hover .social-svg,
+.footer-social-list-item:focus .social-svg {
+  fill: var(--white-color);
+}
+
+.footer-social-list-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+/* =========END FOOTER========== */
 /* =========BUTTON LIST========== */
 .portfolio-list-button {
   display: flex;

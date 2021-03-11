@@ -16,7 +16,7 @@
 </head>
 
 <body>
-<!--==========HEADER==========-->
+    <!--==========HEADER==========-->
     <header class="header">
       <div class="container">
         <nav class="navigation">
@@ -26,25 +26,34 @@
               <a class="link-header link" href="./index.html">Студия</a>
             </li>
             <li class="navigation-item list-item">
-              <a class="link current" href="./portfolio.html">Портфолио</a>
+              <a class="current link" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="navigation-item list-item">
               <a class="link-header link" href="#">Контакты</a>
             </li>
           </ul>
         </nav>
-
         <ul class="contacts-list list">
-          <li>
-            <a class="mail-link link-contacts link" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          <li class="header-link-item">
+            <a class="link-contacts link" href="mailto:info@devstudio.com">
+              <svg class="header-svg" width="16" height="12">
+                <use href="./img/sprite.svg#envelope"></use>
+              </svg>
+              <span>info@devstudio.com</span>
+            </a>
           </li>
-          <li>
-            <a class="link-contacts link" href="tel:+380961111111">+38 096 111 11 11</a>
+          <li class="header-link-item">
+            <a class="link-contacts link" href="tel:+380961111111">
+              <svg class="header-svg" width="10" height="16">
+                <use href="./img/sprite.svg#smartphone"></use>
+              </svg>
+              <span>+38 096 111 11 11</span>
+            </a>
           </li>
         </ul>
       </div>
     </header>
-    <!--==========END HEADER==========--> 
+    <!--==========END HEADER==========-->
 
     <main class="portfolio">
       <!--=========BUTTON LIST=========-->
@@ -159,9 +168,11 @@
     </main>
     <!--=========END PORTFOLIO=========-->
 
-    <!--=========FOOTER==========-->
-    <footer class="footer">
-      <div class="container">
+<!--=========FOOTER==========-->
+<footer class="footer">
+  <div class="container">
+    <ul class="footer-list-icon list">
+      <li class="footer-list-item-icon">
         <a class="logo-footer logo-dark link" href="#"><span class="logo-span">Web</span>Studio</a>
         <address class="address">
           <p class="footer-adress">г. Киев, пр-т Леси Украинки, 26</p>
@@ -174,8 +185,44 @@
             </li>
           </ul>
         </address>
-    </footer>
-    <!--==========END FOOTER==========-->
+      </li>
+      <li class="footer-list-item-icon">
+        <h5 class="footer-social-title">ПРИСОЕДИНЯЙТЕСЬ</h5>
+        <ul class="footer-social-list list">
+          <li class="footer-social-list-item">
+            <a href="" class="footer-social-links link">
+              <svg class="footer-social-svg" width="20" height="20">
+                <use href="./img/sprite.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-list-item">
+            <a href="" class="footer-social-links link">
+              <svg class="footer-social-svg" width="20" height="20">
+                <use href="./img/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-list-item">
+            <a href="" class="footer-social-links link">
+              <svg class="footer-social-svg" width="20" height="20">
+                <use href="./img/sprite.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer-social-list-item">
+            <a href="" class="footer-social-links link">
+              <svg class="footer-social-svg" width="20" height="20">
+                <use href="./img/sprite.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</footer>
+<!--==========END FOOTER==========-->
 
 </body>
 </html>
